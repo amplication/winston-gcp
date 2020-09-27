@@ -1,24 +1,43 @@
 {
-  "name": "@real-kinetic/winston-gcp",
+  "name": "winston-cloud-logging",
   "version": "1.0.0",
-  "description": "Stackdriver-compatible logging with Winston.",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Cloud logging compatible logging with Winston",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
   "keywords": [
     "winston",
     "logging",
+    "google",
+    "cloud",
+    "platform",
     "gcp",
-    "stackdriver",
-    "express",
-    "middleware"
+    "stackdriver"
   ],
-  "author": "Real Kinetic",
-  "license": "Apache-2.0",
+  "author": {
+    "email": "iddan@amplication.com",
+    "name": "Iddan Aaronsohn",
+    "url": "https://amplication.com"
+  },
+  "license": "MIT",
   "dependencies": {
-    "winston": "^3.2.1"
+    "@types/triple-beam": "^1.3.2",
+    "@types/winston": "^2.4.4",
+    "typescript": "^4.0.3",
+    "winston": "^3.3.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RealKinetic/winston-gcp.git"
+    "url": "https://github.com/amplciation/winston-cloud-logging.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.0"
+  },
+  "jest": {
+    "preset": "ts-jest"
   }
 }
