@@ -37,7 +37,7 @@ export const LEVEL_TO_SEVERITY: {
 
 /**
  * Creates Cloud Logging Winston format.
- * The format transformation maps sWinston "level" log property to the Cloud Logging compatible "severity" log property.
+ * The format transformation maps Winston "level" log property to the Cloud Logging compatible "severity" log property.
  */
 export const format = winston.format((info) => {
   if (info.level in LEVEL_TO_SEVERITY) {
