@@ -23,16 +23,3 @@ const logger = winston.createLogger({
   // rest of the logger options
 });
 ```
-
-### Create a logger with format set
-
-```javascript
-const winstonCloudLogging = require("winston-cloud-logging");
-const logger = winstonCloudLogging.createLogger({
-  // the logger options
-});
-```
-
-## Former Art
-
-- [winston-gcp](https://github.com/RealKinetic/winston-gcp)
